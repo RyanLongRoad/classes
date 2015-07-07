@@ -12,7 +12,7 @@ class WheatGraphicsPixmapItem(CropGraphicsPixmapItem):
                                    ":/wheat_young.png", ":/wheat_mature.png",
                                    ":/wheat_old.png"]
 
-        super()__init__(self.available_graphics)
+        super().__init__(self.available_graphics)
 
         self.crop = Wheat()
 

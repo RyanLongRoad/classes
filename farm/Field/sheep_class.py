@@ -3,10 +3,13 @@ from animal_class import *
 class Sheep(Animal):
     """ A potato crop"""
 
-    def __init__(self):
+    
+
+    def __init__(self,name):
         #calls the parent/superclass with default values for growth rate, food need and water need.
-        super().__init__(1,6,6,10,"Dave The Sheep")
+        super().__init__(1,6,6,10,name)
         self._type = "Sheep"
+        self._name = name
         
     #overrid grow method for subclass
         def grow(self,food,water):
@@ -27,6 +30,7 @@ class Sheep(Animal):
 
 
 def main():
+    name = input("choose a name: ")
     sheep_animal = Sheep()
     print(sheep_animal.report())
     manual_grow(sheep_animal,1)

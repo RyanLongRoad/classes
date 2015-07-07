@@ -1,4 +1,4 @@
-from graphic_field_item_class import *
+from graphic_crop_item_class import *
 
 class AnimalGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
     """this class provides a pixmap item with a preset image for the animal"""

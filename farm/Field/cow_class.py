@@ -3,9 +3,9 @@ from animal_class import *
 class Cow(Animal):
     """ A potato crop"""
 
-    def __init__(self):
+    def __init__(self,name):
         #calls the parent/superclass with default values for growth rate, food need and water need.
-        super().__init__(1,6,6,10,"Dave The Cow")
+        super().__init__(1,6,6,10,name)
         self._type = "Cow"
         
     #overrid grow method for subclass
